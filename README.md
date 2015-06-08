@@ -1,5 +1,5 @@
 # Random Art
-
+ 
 ## Description
 
 Create art using Python's random module and math functions.
