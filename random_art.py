@@ -11,7 +11,6 @@ def create_expression():
     generates a number between -1.0 and 1.0, given x and y coordinates."""
 
     # After about 100 different attempts, this created the best image.
-
     z = random.random()/random.random()**4
     expr = lambda x, y: (x*y/z)
     return expr
