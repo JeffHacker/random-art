@@ -1,4 +1,5 @@
 import random
+import os
 
 # Your job is to create better version of create_expression and
 # run_expression to create random art.
@@ -8,7 +9,11 @@ import random
 def create_expression():
     """This function takes no arguments and returns an expression that
     generates a number between -1.0 and 1.0, given x and y coordinates."""
-    expr = lambda x, y: (random.random() * 2) - 1
+
+    # After about 100 different attempts, this created the best image.
+
+    z = random.random()/random.random()**4
+    expr = lambda x, y: (x*y/z)
     return expr
 
 
